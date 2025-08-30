@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(to right, #1e1e2f, #121212);
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #ff007f;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: url("https://images.unsplash.com/photo-1511379938547-c1f69419868d") center/cover no-repeat;
+  color: #fff;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero h2, .hero p, .hero .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ff007f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffcc00;
+  color: black;
+}
+
+.featured {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.albums {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.album-card {
+  background: #1f1f3a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  min-width: 150px;
+  transition: transform 0.3s;
+  color: grey;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+  background: #29294a;
+  color: white;
+}
+
+.create {
+background: #1f1f3a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  min-width: 50px;
+  transition: transform 0.3s;
+  color:blanchedalmond;
+}
+
+.create:hover {
+  transform: scale(1.05);
+  background: #383865;
+
+}
+
+.events {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.events h2 {
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.events ul {
+  list-style: none;
+}
+
+.events li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
