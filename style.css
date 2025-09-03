@@ -23,6 +23,12 @@ header h1 {
   font-size: 3rem;
 }
 
+header h2{
+  margin-bottom: 10px;
+  font-size: 3rem;
+  text-align: center;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -39,6 +45,7 @@ nav a {
 
 nav a:hover {
   color: #ffcc00;
+  text-decoration:underline ;
 }
 
 .hero {
@@ -159,4 +166,77 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main ul li {
+  background: #1f1f3a;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+
+main ul li:hover {
+  transform: scale(1.05);
+  background: #29294a;
+  color: #ffcc00;
+}
+
+form {
+  background: #1f1f3a;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #ffcc00;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+form button {
+  background: #ff007f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #ffcc00;
+  color: black;
 }
